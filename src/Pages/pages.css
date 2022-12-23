@@ -1,0 +1,13 @@
+.Herobg {
+  height: 500px;
+  width: 100vw;
+}
+img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  font-weight: bolder;
+}

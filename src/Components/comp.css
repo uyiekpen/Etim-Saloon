@@ -1,0 +1,297 @@
+.Component {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+
+.Wrapper {
+  height: 100px;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Logo_Button {
+  height: 100px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b571b7;
+}
+
+.Logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Nav-Menu {
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  justify-content: space-between;
+}
+.Nav {
+  font-weight: bold;
+}
+.Btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  height: 60px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid#b571b7;
+  background-color: white;
+  color: #b571b7;
+}
+
+.Mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Wrapper {
+    height: 100px;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Nav-Menu {
+    display: none;
+  }
+
+  .Btn {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  button {
+    height: 50px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 3px solid#b571b7;
+    background-color: white;
+    color: #b571b7;
+  }
+  .Mobile-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .Wrapper {
+    height: 100px;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Nav-Menu {
+    display: none;
+  }
+
+  .Btn {
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  button {
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 3px solid#b571b7;
+    background-color: white;
+    color: #b571b7;
+  }
+
+  .Logo {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+/* footer */
+
+footer {
+  height: 500px;
+  width: 100vw;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.Foot-Wrapper {
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+}
+
+.FooterLogo {
+  width: 23%;
+}
+h3 {
+  color: #b571b7;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+p {
+  color: #fff;
+  line-height: 1.8rem;
+  padding: 10px;
+  font-weight: 15px;
+  text-transform: capitalize;
+}
+.Icon {
+  color: white;
+  color: #fff;
+  line-height: 1.8rem;
+  font-weight: 20px;
+  text-transform: capitalize;
+  width: 140px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+span {
+  font-size: 20px;
+}
+
+.Tittle {
+  font-size: 16px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    height: 600px;
+    width: 100vw;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Foot-Wrapper {
+    display: flex;
+    width: 90vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .FooterLogo {
+    width: 50%;
+  }
+  h3 {
+    color: #b571b7;
+    text-transform: capitalize;
+    padding: 10px;
+  }
+
+  p {
+    color: #fff;
+    line-height: 1.5rem;
+    padding: 10px;
+    font-weight: 15px;
+    text-transform: capitalize;
+  }
+  .Icon {
+    color: white;
+    color: #fff;
+    line-height: 1.5rem;
+    font-weight: 15px;
+    text-transform: capitalize;
+    width: 140px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  span {
+    font-size: 15px;
+  }
+  .Tittle {
+    font-size: 12px;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  footer {
+    height: 750px;
+    width: 100vw;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Foot-Wrapper {
+    display: flex;
+    width: 90vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .FooterLogo {
+    width: 50%;
+  }
+  h3 {
+    color: #b571b7;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  p {
+    color: #fff;
+    line-height: 1.2rem;
+    padding: 10px;
+    font-weight: 12px;
+    text-transform: capitalize;
+  }
+  .Icon {
+    color: white;
+    color: #fff;
+    line-height: 1.2rem;
+    font-weight: 12px;
+    text-transform: capitalize;
+    width: 140px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  span {
+    font-size: 15px;
+  }
+  .Tittle {
+    font-size: 12px;
+    color: white;
+  }
+}
