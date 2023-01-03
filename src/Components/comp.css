@@ -1,5 +1,6 @@
 .Component {
   height: 100px;
+  font-family: poppins;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -136,6 +137,7 @@ button {
 /* footer */
 
 footer {
+  font-family: poppins;
   height: 500px;
   width: 100vw;
   background-color: #1a1a1a;
@@ -241,7 +243,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 425px) {
   footer {
     height: 750px;
     width: 100vw;
@@ -264,25 +266,25 @@ span {
   h3 {
     color: #b571b7;
     text-transform: capitalize;
-    padding: 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 500;
   }
 
   p {
     color: #fff;
-    line-height: 1.2rem;
-    padding: 10px;
-    font-weight: 12px;
+    padding: 8px;
+    font-size: 12px;
     text-transform: capitalize;
+    font-weight: 500;
   }
   .Icon {
     color: white;
     color: #fff;
-    line-height: 1.2rem;
-    font-weight: 12px;
+    font-size: 12px;
     text-transform: capitalize;
-    width: 140px;
-    padding: 10px;
+    font-weight: 500;
+    width: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
