@@ -60,17 +60,22 @@ const Prices = () => {
         {hairStyling ? (
           <ContentHolder>
             <div>
+              <hr />
+
               {data?.map((props) => (
-                <Holder>
-                  <Div1>
-                    <Text>{props.title}</Text>
-                    <div>{props.other}</div>
-                  </Div1>
-                  <Div2>{props.Price}</Div2>
-                  <BookButton>
-                    <button>Book now</button>
-                  </BookButton>
-                </Holder>
+                <div>
+                  <Holder>
+                    <Div1>
+                      <Text>{props.title}</Text>
+                      <div>{props.other}</div>
+                    </Div1>
+                    <Div2>{props.Price}</Div2>
+                    <BookButton>
+                      <button>Book now</button>
+                    </BookButton>
+                  </Holder>
+                  <hr />
+                </div>
               ))}
             </div>
           </ContentHolder>
@@ -93,10 +98,27 @@ const BgImage = styled.img`
 
 const BookButton = styled.div`
   button {
-    background-color: #ca85b7;
-    color: white;
-    border: none;
-    animation: all 350ms;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: #7418a6;
+    border: 3px solid #7418a6;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    height: 120px;
+    button {
+      height: 50px;
+      width: 90px;
+      font-size: 12px;
+      font-weight: bold;
+      background-color: white;
+      color: #7418a6;
+      border: 3px solid #7418a6;
+      margin-top: 20px;
+    }
   }
 `;
 
@@ -104,6 +126,10 @@ const Text = styled.div`
   font-weight: bolder;
   font-size: 15px;
   color: black;
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 `;
 
 const Div2 = styled.td`
@@ -112,6 +138,9 @@ const Div2 = styled.td`
   font-size: 15px;
   color: black;
   padding-left: 20px;
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
 
 const Div1 = styled.tr`
@@ -120,6 +149,13 @@ const Div1 = styled.tr`
   width: 50%;
   height: 90px;
   text-transform: capitalize;
+  @media screen and (max-width: 600px) {
+    height: 150px;
+
+    div {
+      font-size: 12px;
+    }
+  }
 `;
 
 const Holder = styled.div`
@@ -149,6 +185,27 @@ const Table = styled.table`
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
   }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    tr {
+    }
+    th {
+      border: 1px solid black;
+      font-size: 10px;
+
+      transition: all 350ms;
+      width: 100px;
+      :hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        cursor: pointer;
+        background-color: rgba(116, 46, 157, 0.9);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+  }
 `;
 
 const TableHolder = styled.div`
@@ -158,6 +215,10 @@ const TableHolder = styled.div`
 const Wrapper = styled.div`
   width: 80vw;
   margin-top: 20px;
+  @media screen and (max-width: 600px) {
+    width: 90vw;
+    margin-top: 20px;
+  }
 `;
 
 const Container = styled.div`

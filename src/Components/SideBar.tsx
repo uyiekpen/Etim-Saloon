@@ -104,7 +104,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   position: fixed;
-  font-family: montserrat;
+  z-index: 1;
 `;
 const Wrapper = styled.div`
   width: 85%;

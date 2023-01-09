@@ -32,8 +32,10 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "reactstrap": "^9.1.5",
     "remixicon": "^2.5.0",
+    "slick-carousel": "^1.8.1",
     "styled-component": "^2.8.0",
     "styled-components": "^5.3.6",
     "typescript": "^4.9.4",
@@ -64,6 +66,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-slick": "^0.23.10",
     "@types/styled-components": "^5.1.26"
   }
 }
