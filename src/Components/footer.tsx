@@ -1,69 +1,151 @@
 import React from "react";
+import styled from "styled-components";
+import logo from "../assets/images/logo.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-const footer = () => {
-  return (
-    <footer>
-      <div className="Foot-Wrapper">
-        <div className="FooterLogo">
-          <h3>Etims Saloon</h3>
-          <p>
-            Tincidunt elit magnis nulla facilisis. Dolor sagittis maecenas.
-            Sapien nunc amet ultrices, dolores sit ipsum velit purus aliquet,
-            massa fringilla leo orci.
-          </p>
-        </div>
 
-        <div className="FooterLogo">
-          <h3>Additional Links</h3>
-          <p>About</p>
-          <p>shop</p>
-          <p>services</p>
-          <p>contact</p>
-          <p>blog</p>
-        </div>
-        <div className="FooterLogo">
-          <h3>Policies</h3>
-          <p>Delivery and shipping</p>
-          <p>Refund and exchange</p>
-          <p>Terms and conditions</p>
-          <p>Privacy and policy</p>
-        </div>
-        <div className="FooterLogo">
-          <h3>follow us</h3>
-          <div className="Icon">
+const Footer = () => {
+  return (
+    <Container>
+      <Wrapper>
+        <AbtBag>
+          <Logo src={logo} />
+        </AbtBag>
+        <OtherNav>
+          <Holder>
+            <Title>Menu</Title>
+            <span>Home</span>
+            <span>about</span>
+            <span>Pricing</span>
+            <span>shop</span>
+            <span>Blog</span>
+          </Holder>
+          <Holder>
+            <Title>Help</Title>
+            <span>FAQ</span>
+            <span>Privacy Policy</span>
+            <span>Terms and Conditions</span>
+          </Holder>
+          <Holder>
+            <Title>Follow us</Title>
             <span>
               <WhatsAppIcon />
+              <a>Whatsapp</a>
             </span>
-            <a> whatsapp</a>
-          </div>
-          <div className="Icon">
             <span>
               <FacebookIcon />
+              <a>facebook</a>
             </span>
-            <a> facebook</a>{" "}
-          </div>
-          <div className="Icon">
             <span>
               <InstagramIcon />
+              <a>instagram</a>
             </span>
-            <a> instagram</a>{" "}
-          </div>
-          <div className="Icon">
+
             <span>
               <LinkedInIcon />
+              <a>linkedin</a>
             </span>
-            <a> Linkedin</a>{" "}
-          </div>
-        </div>
-      </div>
-      <div className="Tittle">
-        © Copyright {new Date().getFullYear()} – Developed by Osas
-      </div>
-    </footer>
+          </Holder>
+        </OtherNav>
+      </Wrapper>
+      <small>Developed by @osas</small>
+    </Container>
   );
 };
 
-export default footer;
+export default Footer;
+
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  small {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+`;
+const Wrapper = styled.div`
+  width: 85%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
+`;
+const AbtBag = styled.div`
+  margin-bottom: 10px;
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  button {
+    height: 30px;
+    width: 100px;
+    background-color: orange;
+    font-family: montserrat;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+`;
+const Logo = styled.img`
+  height: 70px;
+  width: 100%;
+  object-fit: contain;
+`;
+const Text = styled.div`
+  width: 250px;
+  font-size: 12px;
+  margin-bottom: 15px;
+`;
+const OtherNav = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-between;
+  @media (max-width: 500px) {
+    justify-content: center;
+    flex-direction: column;
+  }
+`;
+const Holder = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  font-size: 15px;
+
+  @media (max-width: 500px) {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  span {
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  a {
+    margin: 10px;
+  }
+`;
+const Title = styled.div`
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 25px;
+`;

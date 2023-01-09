@@ -7,10 +7,6 @@ import img2 from "../assets/images/2.jpg";
 import img3 from "../assets/images/3.jpg";
 import img4 from "../assets/images/4.jpg";
 import "./pages.css";
-import comb from "../assets/images/comb.gif";
-import hair from "../assets/images/hair.png";
-import hairdye from "../assets/images/hair-dye.png";
-import Prices from "./Prices";
 
 const Home = () => {
   return (
