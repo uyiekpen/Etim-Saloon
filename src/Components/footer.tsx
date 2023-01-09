@@ -67,6 +67,7 @@ const Container = styled.div`
   align-items: center;
   color: #fff;
   flex-direction: column;
+  margin-top: 20px;
   small {
     font-size: 10px;
     margin-bottom: 10px;

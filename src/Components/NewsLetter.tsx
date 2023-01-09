@@ -26,9 +26,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
   font-family: montserrat;
-  margin-top: 80px;
+  margin-top: 70px;
 `;
 const Wrapper = styled.div`
   height: 230px;
