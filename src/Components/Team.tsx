@@ -124,7 +124,6 @@ const Component = styled.div`
   width: 100vw;
   color: white;
   background-color: #1f1f1f;
-  margin-top: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
