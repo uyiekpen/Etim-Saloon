@@ -104,7 +104,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
 `;
 const Wrapper = styled.div`
   width: 85%;
