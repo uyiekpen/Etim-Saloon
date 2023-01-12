@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import styled from "styled-components";
 
 import img1 from "../assets/images/1.jpg";
 import img2 from "../assets/images/2.jpg";
@@ -8,7 +9,7 @@ import img4 from "../assets/images/4.jpg";
 import "./pages.css";
 
 const Home = () => {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     speed: 200,
@@ -16,24 +17,28 @@ const Home = () => {
     slidesToScroll: 1,
     autoplay: true,
   };
+
+  const SliderStyle = styled(Slider)`
+    height: 400px;
+    width: 100vw;
+    text-align: center;
+  `;
   return (
     <>
-      <div className="Herobg">
-        <Slider {...settings}>
-          <div>
-            <img src={img1} alt="" />
-          </div>
-          <div>
-            <img src={img2} alt="" />
-          </div>
-          <div>
-            <img src={img3} alt="" />
-          </div>
-          <div>
-            <img src={img4} alt="" />
-          </div>
-        </Slider>
-      </div>
+      <SliderStyle {...settings}>
+        <div>
+          <img src={img1} alt="" />
+        </div>
+        <div>
+          <img src={img2} alt="" />
+        </div>
+        <div>
+          <img src={img3} alt="" />
+        </div>
+        <div>
+          <img src={img4} alt="" />
+        </div>
+      </SliderStyle>
     </>
   );
 };
