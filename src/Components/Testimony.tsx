@@ -31,6 +31,19 @@ const Home = () => {
     h3 {
       font-size: 20px;
     }
+    @media screen and (max-width: 400px) {
+      h3 {
+        font-size: 15px;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 90vw;
+        padding: 10px;
+      }
+    }
   `;
 
   return (

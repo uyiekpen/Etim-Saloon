@@ -13,6 +13,8 @@ const Home = () => {
         <Carousel.Item>
           <Image className="d-block w-100" src={img} alt="First slide" />
           <Carousel.Caption>
+            <button>Book appointment</button>
+
             {/* <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
           </Carousel.Caption>
@@ -21,6 +23,7 @@ const Home = () => {
           <Image className="d-block w-100" src={img2} alt="Second slide" />
 
           <Carousel.Caption>
+            <button>Book appointment</button>
             {/* <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
           </Carousel.Caption>
@@ -33,6 +36,7 @@ const Home = () => {
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p> */}
+            <button>Book appointment</button>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -50,4 +54,14 @@ const Image = styled.img`
 
 const Container = styled.div`
   margin-bottom: 100px;
+
+  button {
+    height: 50px;
+    width: 180px;
+    font-family: poppins;
+    text-transform: capitalize;
+    border: none;
+    background-color: black;
+    color: white;
+  }
 `;

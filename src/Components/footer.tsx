@@ -58,6 +58,7 @@ const Footer = () => {
 export default Footer;
 
 const Container = styled.div`
+  font-family: Poppins;
   width: 100%;
   height: 100%;
   min-height: 60vh;
@@ -98,7 +99,6 @@ const AbtBag = styled.div`
     height: 30px;
     width: 100px;
     background-color: orange;
-    font-family: montserrat;
     font-weight: 600;
     color: #fff;
     border: none;
@@ -129,6 +129,7 @@ const Holder = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 20px;
+  color: white;
   font-size: 15px;
 
   @media (max-width: 500px) {
@@ -138,8 +139,8 @@ const Holder = styled.div`
 
   span {
     margin: 10px 0;
-    font-weight: lighter;
-    font-size: 15px;
+    font-size: 13px;
+    color: white;
   }
   a {
     margin: 10px;

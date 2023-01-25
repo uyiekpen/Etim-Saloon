@@ -12,7 +12,6 @@ const HomePage = () => {
       <About />
       <Team />
       <Testimony />
-      <NewsLetter />
     </div>
   );
 };

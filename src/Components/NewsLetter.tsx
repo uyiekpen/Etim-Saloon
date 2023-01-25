@@ -90,6 +90,7 @@ const EmailBut = styled.div`
 
     @media (max-width: 400px) {
       font-size: 10px;
+      height: 80%;
     }
   }
 

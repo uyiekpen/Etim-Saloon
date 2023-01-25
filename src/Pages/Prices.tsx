@@ -52,7 +52,6 @@ const Prices = () => {
                 <th onClick={onHairStyling}>HAIRSTYLING</th>
                 <th onClick={onHairTreatment}>HAIR TREATMENT</th>
                 <th onClick={onHairTreatment2}>HAIR SERVICES</th>
-                <th onClick={onHairTreatment3}>NAILS</th>
               </tr>
             </tbody>
           </Table>
@@ -80,9 +79,9 @@ const Prices = () => {
             </div>
           </ContentHolder>
         ) : HairTreatment ? (
-          <ContentHolder>hello2</ContentHolder>
+          <ContentHolder>not yet updated</ContentHolder>
         ) : HairTreatment2 ? (
-          <ContentHolder>hello3</ContentHolder>
+          <ContentHolder>not yet updated</ContentHolder>
         ) : HairTreatment3 ? (
           <ContentHolder>hello4</ContentHolder>
         ) : null}
@@ -137,6 +136,7 @@ const Div2 = styled.td`
   font-weight: bolder;
   font-size: 15px;
   color: black;
+  margin-top: 20px;
   padding-left: 20px;
   @media screen and (max-width: 600px) {
     font-size: 12px;
