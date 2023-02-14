@@ -133,7 +133,6 @@ const IconsHold = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
   span {
     margin: 0 7px;
   }

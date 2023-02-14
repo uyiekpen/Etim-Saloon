@@ -54,7 +54,6 @@ const Image = styled.img`
 
 const Container = styled.div`
   margin-bottom: 100px;
-
   button {
     height: 50px;
     width: 180px;

@@ -78,6 +78,7 @@ const SideBar: React.FC<Props> = ({ setToggle }) => {
         >
           <span>Blog</span>
         </NavLink>
+
         <hr />
         <NavLink
           to="/"
@@ -88,7 +89,6 @@ const SideBar: React.FC<Props> = ({ setToggle }) => {
         >
           <span>Contact</span>
         </NavLink>
-        <hr />
       </Wrapper>
     </Container>
   );
