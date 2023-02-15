@@ -70,7 +70,7 @@ const SideBar: React.FC<Props> = ({ setToggle }) => {
 
         <hr />
         <NavLink
-          to=""
+          to="/blog"
           onClick={() => {
             setToggle(false);
           }}

@@ -43,7 +43,10 @@ const Header: React.FC = () => {
               >
                 <span>Shop</span>
               </NavLink>
-              <NavLink to="" style={{ textDecoration: "none", color: "#000" }}>
+              <NavLink
+                to="/blog"
+                style={{ textDecoration: "none", color: "#000" }}
+              >
                 <span>Blog</span>
               </NavLink>
               <NavLink to="" style={{ textDecoration: "none", color: "#000" }}>

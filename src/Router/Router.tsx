@@ -5,6 +5,7 @@ import ProductDetails from "../Pages/productDetails";
 import Shop from "../Pages/Shop";
 import HomePage from "../Pages/HomePage";
 import Prices from "../Pages/Prices";
+import Blog from "../Pages/Blog";
 
 const Router = () => {
   return (
@@ -15,6 +16,7 @@ const Router = () => {
       <Route path="about" element={<About />} />
       <Route path="product/:id" element={<ProductDetails />} />
       <Route path="shop" element={<Shop />} />
+      <Route path="blog" element={<Blog />} />
     </Routes>
   );
 };
