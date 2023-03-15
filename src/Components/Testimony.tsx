@@ -48,6 +48,8 @@ const Home = () => {
 
   return (
     <Container>
+      <Div>Reviews from Our Customers</Div>
+
       <SliderStyle {...settings}>
         <div>
           <img src={img} alt="" />
@@ -92,6 +94,11 @@ const Home = () => {
   );
 };
 
+const Div = styled.div`
+  font-size: 40px;
+  font-weight: 400;
+`;
+
 const Container = styled.div`
   height: 300px;
   width: 100vw;
@@ -100,6 +107,7 @@ const Container = styled.div`
   align-items: center;
   display: flex;
   font-family: poppins;
+  flex-direction: column;
 `;
 
 export default Home;

@@ -69,7 +69,6 @@ const Container = styled.div`
   flex-wrap: wrap;
   font-family: poppins;
   margin-bottom: 100px;
-  background-color: #000;
 `;
 const Wrapper = styled.div`
   width: 75%;
@@ -253,16 +252,16 @@ const ProdName = styled.div`
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #fff;
+  color: #000;
   @media screen and (max-width: 400px) {
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #fff;
+    color: #000;
   }
 `;
 const ProdPrice = styled.div`
   font-size: 15px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
 `;
