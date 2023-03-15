@@ -6,10 +6,10 @@ const EmptyCart = () => {
     <Container>
       <Wrapper>
         <small>Don't Wait😏</small>
-        <Title>Your BAG is Curently Empty</Title>
+        <Title>Your Cart is Curently Empty</Title>
         <Box>
           {" "}
-          <span>Go to the Catalogue to make Purchase</span>{" "}
+          <span>Go to our product to make Purchase</span>{" "}
         </Box>
       </Wrapper>
     </Container>

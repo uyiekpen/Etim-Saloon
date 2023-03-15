@@ -7,6 +7,7 @@ import HomePage from "../Pages/HomePage";
 import Prices from "../Pages/Prices";
 import Blog from "../Pages/Blog";
 import Contact from "../Pages/Contact";
+import EmptyCart from "../Pages/EmptyCart";
 
 const Router = () => {
   return (
@@ -19,6 +20,7 @@ const Router = () => {
       <Route path="shop" element={<Shop />} />
       <Route path="blog" element={<Blog />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="cart" element={<EmptyCart />} />
     </Routes>
   );
 };

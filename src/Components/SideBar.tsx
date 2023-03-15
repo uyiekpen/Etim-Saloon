@@ -81,7 +81,7 @@ const SideBar: React.FC<Props> = ({ setToggle }) => {
 
         <hr />
         <NavLink
-          to="/"
+          to="/contact"
           onClick={() => {
             setToggle(false);
           }}

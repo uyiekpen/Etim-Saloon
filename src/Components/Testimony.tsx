@@ -97,6 +97,9 @@ const Home = () => {
 const Div = styled.div`
   font-size: 40px;
   font-weight: 400;
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 
 const Container = styled.div`
