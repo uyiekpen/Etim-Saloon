@@ -1,9 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import styled from "styled-components";
 import product from "../assets/images/product.jpg";
+import ProductDetails from "./productDetails";
 
-const Shop = () => {
+const Shop: React.FC = () => {
+  const [moDal, setModal] = React.useState<boolean>(false);
+
+  const onOpenModal = () => {
+    setModal(!moDal);
+  };
+
   return (
     <Container>
       <Wrapper>
@@ -37,17 +43,28 @@ const Shop = () => {
               <Product>
                 <ProdName>Hydrate And Detangle Hair spritz</ProdName>
                 <ProdPrice>$200</ProdPrice>
-                <Button>See More</Button>
+                <Button onClick={onOpenModal}>See More</Button>
               </Product>
             </div>
           </BagCard>
         </BagsDispHold>
+        <SideTogg>
+          {moDal ? <ProductDetails setModal={setModal} /> : null}
+        </SideTogg>
       </Wrapper>
     </Container>
   );
 };
 
 export default Shop;
+
+const SideTogg = styled.div`
+  position: absolute;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Button = styled.button`
   height: 50px;
@@ -58,6 +75,7 @@ const Button = styled.button`
   color: #7418a6;
   border: 3px solid #7418a6;
   margin-top: 20px;
+  position: relative;
 `;
 
 const Container = styled.div`
@@ -72,6 +90,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 75%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 `;

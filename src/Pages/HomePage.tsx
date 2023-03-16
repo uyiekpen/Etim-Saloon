@@ -1,6 +1,6 @@
 import Home from "../Components/Home";
 import Testimony from "../Components/Testimony";
-import BestSelling from "../Components/BestSelling";
+import BestSelling from "../Components/Selling";
 
 const HomePage = () => {
   return (

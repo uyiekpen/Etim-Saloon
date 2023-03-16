@@ -16,7 +16,16 @@ const Router = () => {
       <Route path="home" element={<HomePage />} />
       <Route path="pricing" element={<Prices />} />
       <Route path="about" element={<About />} />
-      <Route path="product/:id" element={<ProductDetails />} />
+      <Route
+        path="product/:id"
+        element={
+          <ProductDetails
+            setModal={function (value: React.SetStateAction<boolean>): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
+        }
+      />
       <Route path="shop" element={<Shop />} />
       <Route path="blog" element={<Blog />} />
       <Route path="contact" element={<Contact />} />
